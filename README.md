@@ -5,6 +5,6 @@ static web desain dengan tema tema **INNOVATION & CREATION GILDEN GENERATION TO 
 ## Jombang Agronews
 
 ini baru tak setup <br>
-**Untuk Preview ada** <a href="">di sini</a>
+**Untuk Preview ada** <a href="https://yohanesokta.github.io/INVOFEST-WEB-DESAIN/">di sini</a>
 
     https://yohanesokta.github.io/INVOFEST-WEB-DESAIN/
