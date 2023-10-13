@@ -49,7 +49,7 @@ nav{
     height: 14px;
     font-size: 14px;
     text-decoration: none;
-    color:#141a16;
+    color:#5f5f5f;
     font-weight: 400;
     margin:auto 0;
 }
@@ -118,7 +118,8 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     padding-left: 10px;
     width: 280px;
     border: none;
-    height: 50px;
+    height: 48px;
+    border: 1px solid var(--green-second);
 }
 .emailbox button{
     width: 100px;
@@ -126,18 +127,43 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     color:white;
     border: none;
     background-color: var(--green-second);
-    height: 50px;
+    height: 51px;
 }
 .hero-image-right{
-    width: 600px;
-    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 820px;
     display: flex;
     height: 100%;
     overflow-x: scroll;
-    overflow-anchor: inherit;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.hero-image-right::-webkit-scrollbar { 
+    display: none;
 }
 .hero-image-right img{
     height: 90%;
     margin: auto 20px;
-    border-radius: 0 30px 0 30px;
+    border-radius: 10px 30px 10px 30px;
+}
+
+
+/* end of hero */
+
+.produk-unggulan{
+    position: absolute;
+    width: 100%;
+    background-color: var(--secon-color);
+}
+.produk-unggulan h1{
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Poppins';
+    font-size: 24px;
+}
+.produk-unggulan p{
+    font-family: 'Poppins';
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0;
 }
