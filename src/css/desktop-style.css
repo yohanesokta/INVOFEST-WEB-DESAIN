@@ -12,12 +12,17 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    width: 100%;
+    display: flex;
+}
 body{
     position: relative;
     z-index: -99;
+    background-color: var(--secon-color);
 }
 nav{
-    z-index: 999;
+    z-index: 10;
     position: fixed;
     width: 100%;
     height: var(--nav-height);
@@ -54,6 +59,27 @@ nav{
     color:#5f5f5f;
     font-weight: 400;
     margin:auto 0;
+    position: relative;
+}
+.toko-menu{
+    transition: .2s ease;
+    width: 100px;
+    height: 0px;
+    margin-left: -20px;
+    padding: 0 20px;
+    background-color: white;
+    position: absolute;
+    margin-top: 0px;
+    overflow: hidden;
+}
+#toko:hover .toko-menu{
+    height: 160px;
+}
+.toko-menu p:first-child{
+    margin-top: 20px;
+}
+.toko-menu p{
+    margin-top: 10px;
 }
 .btn-right{
     height: 100%;
@@ -131,7 +157,6 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     width: 50%;
     display: flex;
     height: 100%;
-    overflow-x: scroll;
 }
 .col-berita{
     width: 550px;
@@ -155,6 +180,7 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     border-radius: 3px;
     box-shadow: none;
     height: 45%;
+    opacity: .7;
 }
 #berita1{
     background: url('/src/images/berita1.webp');
@@ -257,12 +283,26 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     width: 100%;
     display: flex;
 }
+#shop1{
+    background: url('/src/image/onion.jpeg');
+    background-size: cover;
+}
+#shop2{
+    background: url('/src/images/cabai.jpg');
+    background-size: cover;
+}
+#shop3{
+    background: url('/src/images/semangka.jpg');
+    background-size: cover;
+}
+#shop4{
+    background: url('/src/images/bawang.jpg');
+    background-size: cover;
+}
 .c-shop-img{
     border-radius: 10px;
     width: 80px;
     height: 80px;
-    background: url('/src/image/onion.jpeg');
-    background-size: cover;
     margin: auto;
     box-shadow: 0px 0px 3px rgb(66, 66, 66);
 }
@@ -307,6 +347,134 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     display: flex;
 }
 .col-story img{
-    width: 60%;
+    width: 400px;
     margin: auto;
+}
+.col-story p{
+    margin: auto;
+    width: 80%;
+    font-size: 18px;
+    color: #5f5f5f;
+    font-family: 'Poppins';
+}
+.col-story p span{
+    background-color:#8cec7d;
+    color: white;
+    opacity: .8;
+    padding: 4px 3px;
+}
+
+/* End Of Story */
+.contact{
+    height: 800px;
+}
+.contact h1{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 24px;
+}
+.contact-menu{
+    position: relative;
+    margin: 40px auto;
+    width: 900px;
+    height: 250px;
+    justify-content: space-between;
+    display: flex;
+}
+.contact-isi{
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+.contact-isi .icon{
+    z-index: 1;
+    margin: auto;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px gray;
+    background-color: var(--white-color);
+    font-size: 40px;
+    transform: scale(1.3);
+    color: var(--green-second);
+}
+.contact-isi .icon i{
+    margin: auto;
+}
+.contact-isi-form{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    box-shadow: 0 0 6px rgb(208, 208, 208);
+    bottom: 0;
+    background-color:var(--white-color);
+}
+.contact-isi-form h3{
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+.contact-isi-form p{
+    font-size: 12px;
+    font-family: 'Poppins';
+    color: gray;
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+}
+#contact-visit{
+    position: absolute;
+    bottom: 0;
+    background-color: #8ddcae;
+    padding: 5px 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+#contact-visit i{
+    font-size: 10px;
+}
+
+
+/* end of contact */
+.col-login{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    z-index: 11;
+    display: flex;
+    background-color: rgba(255, 255, 255,.7);
+}
+.col-login-field{
+    width: 400px;
+    background-color: white;
+    margin: auto;
+    height: 600px;
+    box-shadow: 0 0 10px rgb(213, 213, 213);
+    border-radius: 5px;
+}
+.col-login-field h1{
+    font-size: 24px;
+    font-family: 'Poppins';
+    text-align: center;
+    margin-top: 30px;
+    color: var(--green-second);
+}
+.col-login-field form{
+    width:70%;
+    margin: auto;
+}
+.col-login-field form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0 10px 15px;
+    border-radius: 5px;
+    margin-left: -7.5px;
 }

@@ -1,1 +1,9 @@
-document.getElementById('test').innerHTML = 'author : yohanes oktanio <br> server : github - pages<br><br>js running ok'
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

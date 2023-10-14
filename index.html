@@ -17,9 +17,12 @@
             <p>Grow Store</p>
         </div>
         <div class="nav-menu">
-            <a href="#">Beranda</a>
-            <a href="#">Tentang Kami</a>
-            <a href="#">Toko</a>
+            <a href="#home">Beranda</a>
+            <a href="#about">Sejarah</a>
+            <a href="#" id="toko">Toko <div class="toko-menu">
+                <p>Buah</p>
+                <p>Sayuran</p>
+            </div></a>
             <a href="#">Kontak</a>
         </div>
         <div class="btn-right">
@@ -28,7 +31,7 @@
     </nav>
     <div class="nav-gap"></div>
 
-    <div class="hero-section">
+    <div class="hero-section" id="home">
         <!-- Section Hero -->
         <div class="hero-txt-left">
             <h1>Grow Store</h1>
@@ -49,7 +52,7 @@
                         enaikan harga bawang merah di pasar tradisional seminggu terakhir, dianggap wajar
                     </p>
                     <div class="btn">
-                        <a href="#" class="btn-readmore">
+                        <a href="https://radarjombang.jawapos.com/berita-daerah/661029598/harga-bawang-naik-disdagrin-jombang-masih-wajar" class="btn-readmore" target="_blank">
                             Baca Selengkapnya
                         </a>
                     </div>
@@ -63,7 +66,7 @@
                         terupdate pada pukul 09:50:38 menyebutkan, harga Cabe Rawit Merah di Kota Blitar Rp24.000
                     </p>
                     <div class="btn">
-                        <a href="#" class="btn-readmore">
+                        <a href="https://blitar.jatimnetwork.com/ekonomi-bisnis/7339521008/terendah-di-jombang-simak-yuk-harga-cabe-rawit-merah-di-kota-blitar-rabu-19-juli-2023#sidr" class="btn-readmore" target="_blank">
                             Baca Selengkapnya
                         </a>
                     </div>
@@ -80,10 +83,10 @@
             <div class="shop-menu">
                 <div class="c-shop-menu">
                     <div class="c-shop-img-field">
-                        <div class="c-shop-img">
+                        <div class="c-shop-img" id="shop1">
                         </div>
                     </div>
-                    <p>Brambang</p>
+                    <p>Bawang Merah</p>
                     <div class="c-shop-desk">
                         <p>Tawaran terbaik! Bawang merah segar, besar, dan lezat langsung dari petani terpercaya. Sempurna untuk masakan Anda!"</p>
                     </div>
@@ -91,10 +94,10 @@
 
                 <div class="c-shop-menu">
                     <div class="c-shop-img-field">
-                        <div class="c-shop-img">
+                        <div class="c-shop-img" id="shop2">
                         </div>
                     </div>
-                    <p>Brambang</p>
+                    <p>Cabai</p>
                     <div class="c-shop-desk">
                         <p>Tawaran terbaik! Bawang merah segar, besar, dan lezat langsung dari petani terpercaya. Sempurna untuk masakan Anda!"</p>
                     </div>
@@ -102,10 +105,10 @@
 
                 <div class="c-shop-menu">
                     <div class="c-shop-img-field">
-                        <div class="c-shop-img">
+                        <div class="c-shop-img" id="shop3">
                         </div>
                     </div>
-                    <p>Brambang</p>
+                    <p>Semangka</p>
                     <div class="c-shop-desk">
                         <p>Tawaran terbaik! Bawang merah segar, besar, dan lezat langsung dari petani terpercaya. Sempurna untuk masakan Anda!"</p>
                     </div>
@@ -113,10 +116,10 @@
 
                 <div class="c-shop-menu">
                     <div class="c-shop-img-field">
-                        <div class="c-shop-img">
+                        <div class="c-shop-img" id="shop4">
                         </div>
                     </div>
-                    <p>Brambang</p>
+                    <p>Bawang Bombai</p>
                     <div class="c-shop-desk">
                         <p>Tawaran terbaik! Bawang merah segar, besar, dan lezat langsung dari petani terpercaya. Sempurna untuk masakan Anda!"</p>
                     </div>
@@ -124,13 +127,81 @@
             </div>
         </div>
     </div>
-    <div class="col-story-one">
+    <div class="col-story-one" id="about">
         <div class="col-story-center">
             <div class="col-story">
                 <img src="./src/images/images3.png" alt="">
             </div>
             <div class="col-story">
+                <p><span>Grow store</span> ini tercipta dikarenakan adanya konflik antara petani dan pembeli yang disebabkan harga yang tidak ekonomis dimana petani mendapatkan uang yang kecil dari pengepul dan pembeli mendapatkan harga yang mahal, Website ini diciptakan untuk membuat petani sejahtera dan pembeli merasa puas Dengan harga yang terjangkau</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <h1>Contact US</h1>
+        <div class="container">
+            <div class="contact-menu">
+                <div class="contact-isi">
+                    <div class="container">
+                        <div class="icon"><i class="fa-solid fa-building"></i></div>
+                        <div class="contact-isi-form">
+                            <h3>
+                                Sales
+                            </h3>
+                            <div class="container">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, necessitatibus!</p>
+                            </div>
+                            <div class="container">
+                                <a href="#" id="contact-visit">Contact sales <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="contact-isi">
+                    <div class="container">
+                        <div class="icon"><i class="fa-solid fa-headset"></i></div>
+                        <div class="contact-isi-form">
+                            <h3>
+                                Help & Support
+                            </h3>
+                            <div class="container">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, necessitatibus!</p>
+                            </div>
+                            <div class="container">
+                                <a href="#" id="contact-visit">Contact Support <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-isi">
+                    <div class="container">
+                        <div class="icon"><i class="fa-regular fa-newspaper"></i></div>
+                        <div class="contact-isi-form">
+                            <h3>
+                                Media
+                            </h3>
+                            <div class="container">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, necessitatibus!</p>
+                            </div>
+                            <div class="container">
+                                <a href="#" id="contact-visit">Visit Media <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-login">
+        <div class="col-login-field">
+            <h1>Masuk</h1>
+            <div class="container">
+                <form action="">
+                    <input type="text" id="usr" name="usr" placeholder="Email autau Nomor Telephon">
+                    <input type="password" id="usr" name="usr" placeholder="Kata Sandi">
+                </form>
             </div>
         </div>
     </div>
