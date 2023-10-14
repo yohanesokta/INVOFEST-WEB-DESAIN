@@ -14,8 +14,10 @@
 }
 body{
     position: relative;
+    z-index: -99;
 }
 nav{
+    z-index: 999;
     position: fixed;
     width: 100%;
     height: var(--nav-height);
@@ -82,13 +84,14 @@ nav{
 
 
 .hero-section{
+    position: relative;
     background-color: var(--secon-color);
     width: 100%;
     height:400px;
     display: flex;
 }
 .hero-txt-left{
-    width: 600px;
+    width: 50%;
     height: 100%;
     margin-left: 100px;
 }
@@ -96,7 +99,7 @@ nav{
     font-family: 'Poppins';
     font-weight: bold;
     color: white;
-    margin-top: 50px;
+    margin-top: 65px;
     padding: 10px;
     background: rgb(25,168,85);
 background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%, rgba(246,246,246,1) 100%);
@@ -114,45 +117,89 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     width: 400px;
     height: 50px;
 }
-.emailbox input{
-    padding-left: 10px;
-    width: 280px;
-    border: none;
-    height: 48px;
-    border: 1px solid var(--green-second);
-}
 .emailbox button{
-    width: 100px;
+    width: 200px;
     font-family: 'Poppins';
-    color:white;
+    color:var(--green-second);
     border: none;
-    background-color: var(--green-second);
+    background-color: var(--secon-color);
+    border: 1px solid var(--green-second);
     height: 51px;
 }
 .hero-image-right{
     transition: all 0.3s ease;
-    width: 820px;
+    width: 50%;
     display: flex;
     height: 100%;
     overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }
-.hero-image-right::-webkit-scrollbar { 
-    display: none;
-}
-.hero-image-right img{
-    height: 90%;
+.col-berita{
+    width: 550px;
     margin: auto 20px;
-    border-radius: 10px 30px 10px 30px;
+    display: flex;
+    justify-content: space-between;
 }
-
-
+.berita{
+    border-radius: 5px;
+    box-shadow: 0 0 1.4px gray;
+    width: 48%;
+    padding: 5px;
+    margin-left: 20px;
+    height: 300px;
+}
+.berita:first-child{
+    box-shadow: 0 0 8px gray;
+}
+.image-berita{
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: none;
+    height: 45%;
+}
+#berita1{
+    background: url('/src/images/berita1.webp');
+    background-size: cover;
+}#berita2{
+    background: url('/src/images/berita2.webp');
+    background-size: cover;
+}
+.berita p:nth-child(2){
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    width: 95%;
+    margin-left: 2.5%;
+}
+.berita p:nth-child(3){
+    margin-top: 5px;
+    font-family: 'Poppins';
+    font-size: 10px;
+    width: 95%;
+    color: #747474;
+    margin-left: 2.5%;
+}
+.btn{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+}
+.btn-readmore{
+    margin: auto;
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: var(--green-second);
+    padding: 5px 10px;
+}
 /* end of hero */
 
 .produk-unggulan{
+    cursor: default;
     position: absolute;
     width: 100%;
+    z-index: -1;
     background-color: var(--secon-color);
 }
 .produk-unggulan h1{
@@ -160,10 +207,100 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     margin-top: 80px;
     font-family: 'Poppins';
     font-size: 24px;
+    position: relative;
+}
+.produk-unggulan h1::before{
+    position: absolute;
+    left: 0;
+    z-index: -99;
+    margin-top: -10px;
+    content: "";
+    background-image: url('/src/images/pattern.jpg');
+    opacity: .2;
+    background-size: cover;
+    width: 100%;
+    height: 480px;
 }
 .produk-unggulan p{
     font-family: 'Poppins';
     font-size: 12px;
     text-align: center;
     margin: 10px 0;
+}
+.field-shop{
+    width: 100%;
+    display: flex;
+}
+.shop-menu{
+    
+    width: 900px;
+    justify-content: space-between;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+}
+.c-shop-menu{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+    z-index: 10;
+    background-color: rgb(239, 239, 239);
+    border-radius: 8px;
+    height:100%;
+    
+    width: 200px;
+}
+.c-shop-menu:hover{
+    box-shadow: 0 0 5px gray;
+}
+.c-shop-img-field{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+}
+.c-shop-img{
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    background: url('/src/image/onion.jpeg');
+    background-size: cover;
+    margin: auto;
+    box-shadow: 0px 0px 3px rgb(66, 66, 66);
+}
+.c-shop-menu p{
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+.c-shop-desk{
+    display: flex;
+    width: 100%;
+}
+.c-shop-desk p{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    color: gray;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+/* end of Produk Unggulan */
+
+.col-story-one{
+    margin-top: 480px;
+    width: 100%;
+    display: flex;
+    height:500px;
+    background-color: var(--green-active);
+}
+.col-story-center{
+    margin: auto;
+    height: 100%;
+    display: flex;
+    width: 85%;
+}
+.col-story{
+    width: 50%;
+    height: 100%;
 }
