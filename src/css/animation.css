@@ -1,14 +1,17 @@
 .col-login-on{
     display: flex;
     transition: 0.3s;
+    backdrop-filter: blur(10px);
     opacity: 1;
-    animation: onlogin 0.5s;
+    animation: onlogin 1s;
 }
 @keyframes onlogin{
     from{
         opacity: 0;
+        backdrop-filter: blur(1px);
     }
     to{
         opacity: 1;
+        backdrop-filter: blur(10px);
     }
 }

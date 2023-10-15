@@ -184,7 +184,8 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     opacity: .7;
 }
 #berita1{
-    background: url('/src/images/berita1.webp');
+    background: url(./src/images/berita1.webp) repeat 0;
+
     background-size: cover;
 }#berita2{
     background: url('/src/images/berita2.webp');
@@ -367,7 +368,7 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
 
 /* End Of Story */
 .contact{
-    height: 800px;
+    height: 380px;
 }
 .contact h1{
     margin-top: 20px;
@@ -461,7 +462,26 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     height: 100%;
     background-color: rgba(255, 255, 255,.7);
     backdrop-filter: blur(10px);
-
+}
+.col-login-close{
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+    border-radius: 0 20px 0 10px;
+    background-color: var(--green-second);
+    transition: 0.3s ease;
+}
+.col-login-close i{
+    color: white;
+    font-size: 20px;
+}
+.col-login-close:hover{
+    background-color: rgb(173, 235, 209);
+}
+.col-login-close:hover i{
+    color: var(--green-second);
 }
 .col-login-field{
     position: relative;
@@ -471,6 +491,9 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     height: 550px;
     box-shadow: 0 0 10px rgb(213, 213, 213);
     border-radius: 20px;
+}
+#col-sign .col-login-field{
+    height: 650px;
 }
 .col-login-field h1{
     font-size: 32px;
@@ -512,15 +535,18 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     border-radius: 50px;
 }
 .col-login-field a{
-    color: gray;
+    color: rgb(45, 133, 87);
     text-decoration: none;
-    font-size: 12px;
+    font-size: 10px;
+    font-family: 'Poppins';
     position: absolute;
     right: 50px;
-    margin-top: 10px;
+    margin-top: 15px;
+}
+.col-login-field .no-acc{
+    left: 50px;
 }
 .container-login-dengan{
-    margin-top: 20px;
     width: 100%;
     display: flex;
 }
@@ -538,7 +564,7 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     padding: 0 10px;
     color: rgb(149, 149, 149);
     font-family: 'Poppins';
-    margin: -8px auto;
+    margin: -10px auto;
 }
 .col-oaut{
     width: 70%;
