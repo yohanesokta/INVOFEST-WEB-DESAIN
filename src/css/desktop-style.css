@@ -184,11 +184,11 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     opacity: .7;
 }
 #berita1{
-    background: url(../src/images/berita1.webp) repeat 0;
+    background: url(../../src/images/berita1.webp);
 
     background-size: cover;
 }#berita2{
-    background: url(../src/images/berita2.webp);
+    background: url(../../src/images/berita2.webp);
     background-size: cover;
 }
 .berita p:nth-child(2){
@@ -243,7 +243,7 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     z-index: -99;
     margin-top: -10px;
     content: "";
-    background-image: url(../src/images/pattern.jpg);
+    background-image: url(../../src/images/pattern.jpg);
     opacity: .2;
     background-size: cover;
     width: 100%;
@@ -286,19 +286,19 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     display: flex;
 }
 #shop1{
-    background: url(../src/image/onion.jpeg);
+    background: url(../../src/image/onion.jpeg);
     background-size: cover;
 }
 #shop2{
-    background: url(../src/images/cabai.jpg);
+    background: url(../../src/images/cabai.jpg);
     background-size: cover;
 }
 #shop3{
-    background: url(../src/images/semangka.jpg);
+    background: url(../../src/images/semangka.jpg);
     background-size: cover;
 }
 #shop4{
-    background: url(../src/images/bawang.jpg);
+    background: url(../../src/images/bawang.jpg);
     background-size: cover;
 }
 .c-shop-img{
