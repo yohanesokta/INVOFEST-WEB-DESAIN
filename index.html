@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/css/import-font.css">
     <link rel="stylesheet" href="src/css/desktop-style.css">
     <link rel="stylesheet" href="src/css/mobile-style.css">
+    <link rel="stylesheet" href="src/css/animation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -39,7 +40,7 @@
                 Selamat datang di Grow Store. Temukan dan dapatkan hasil tani yang berkualitas dengan mudah dan aman. Di Grow Store online kami anda akan menemukan pilihan hasil tani dengan harga yang terjangkau.
             </p>
             <div class="emailbox">
-                <button>Masuk Sekarang</button>
+                <button onclick="masuk()">Masuk Sekarang</button>
             </div>
         </div>
         <div class="hero-image-right">
@@ -194,14 +195,36 @@
             </div>
         </div>
     </div>
-    <div class="col-login">
+    <div class="col-login" id="col-login">
         <div class="col-login-field">
             <h1>Masuk</h1>
             <div class="container">
                 <form action="">
                     <input type="text" id="usr" name="usr" placeholder="Email autau Nomor Telephon">
-                    <input type="password" id="usr" name="usr" placeholder="Kata Sandi">
+                    <label for="usr"><i class="fa-solid fa-user"></i></label>
+                    <input type="password" id="pwd" name="pwd" placeholder="Kata Sandi">
+                    <label for="pwd"><i class="fa-solid fa-lock"></i></label>
+                    <a href="#">Lupa Sandi?</a>
+                    <button>Login</button>
                 </form>
+            </div>
+            <div class="container-login-dengan">
+                <div class="line"></div>
+            </div>
+            <div class="container">
+                <span>Masuk Dengan</span>
+            </div>
+            <div class="container">
+                <div class="col-oaut">
+                    <div class="oaut">
+                        <img src="./src/image/Google_Icons-09-512.webp" alt="google logo">
+                        <p>Google</p>
+                    </div>
+                    <div class="oaut">
+                        <img id="fb"src="./src/image/fb_icon_325x325.png" alt="google logo">
+                        <p>Facebook</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

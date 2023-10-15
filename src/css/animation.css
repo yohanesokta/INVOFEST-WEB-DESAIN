@@ -1,0 +1,14 @@
+.col-login-on{
+    display: flex;
+    transition: 0.3s;
+    opacity: 1;
+    animation: onlogin 0.5s;
+}
+@keyframes onlogin{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
