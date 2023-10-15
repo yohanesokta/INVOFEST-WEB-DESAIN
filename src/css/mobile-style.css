@@ -13,6 +13,9 @@
         margin: auto;
         width: 85%;
     }
+    .hero-txt-left p{
+        width: 100%;
+    }
     .hero-image-right{
         display: none;
     }
@@ -33,7 +36,7 @@
 
     /* story */
     .col-story-one{
-        margin-top: 1150px;
+        margin-top: 1250px;
         height: 800px;
     }
     .col-story-center{
@@ -48,7 +51,13 @@
     .col-story img{
         margin: auto;
         margin-top: 50px;
-        width: 390px;
+        width: 250px;
+    }
+    .col-story p{
+        margin-top: 0;
+    }
+    .produk-unggulan h1::before{
+       background: none;
     }
 
     
