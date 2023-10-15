@@ -14,6 +14,15 @@ function masuk() {
     dom.classList.add('col-login-on');
 }
 
+function goDaftar(){
+    document.getElementById('col-login').classList.remove('col-login-on');
+    document.getElementById('col-sign').classList.add('col-login-on');
+}
+function goLogin(){
+    document.getElementById('col-sign').classList.remove('col-login-on');
+    document.getElementById('col-login').classList.add('col-login-on');
+}
+
 function closeLogin(){
     document.getElementById('col-login').classList.remove('col-login-on');
 }
@@ -23,3 +32,28 @@ function daftar(){
 function closeSign(){
     document.getElementById('col-sign').classList.remove('col-login-on');
 }
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.remove('left')
+        }else{
+            entry.target.classList.add('left')
+        }
+    })
+})
+
+const leftScroll  = document.querySelectorAll('.left-scroll')
+leftScroll.forEach((el)=> observer.observe(el))
+
+const observerContact = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.remove('contact-nAnim')
+        }else{
+            entry.target.classList.add('contact-nAnim')
+        }
+    })
+})
+
+document.querySelectorAll('.contact-menu').forEach((el)=> observerContact.observe(el))

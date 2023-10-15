@@ -5,6 +5,16 @@
     opacity: 1;
     animation: onlogin 1s;
 }
+.left-scroll{
+    transition: 2s ease;
+}
+.left{
+    opacity: 0;
+    transform: translateX(50px);
+}
+.contact-nAnim{
+    width: 90%;
+}
 @keyframes onlogin{
     from{
         opacity: 0;
