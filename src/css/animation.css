@@ -25,3 +25,6 @@
         backdrop-filter: blur(10px);
     }
 }
+.social-col a img:hover{
+    transform: scale(1.1);
+}

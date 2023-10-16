@@ -1,0 +1,71 @@
+.slide2-toko{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+.slide2-toko-col{
+    width: 1200px;
+    height:310px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+.slide2-item{
+    border-radius: 15px;
+    width: 200px;
+    height: 295px;
+    margin: 5px;
+    box-shadow: 0 0 2px gray;
+}
+.tokolabel{
+    width: 1200px;
+    margin: 20px auto;
+}
+.tokolabel h1{
+    font-size: 24px;
+    color: gray;
+    font-family: 'Poppins';
+}
+.slide2-item .image{
+    background-size: cover;
+    width: 100%;
+    height: 65%;
+    border-radius: 15px 15px 0 0;
+}
+.nama-item{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-size: 14px;
+}   
+.slide2-item h1{
+    font-family: 'Poppins';
+    font-size: 16px;
+    margin-left: 10px;
+}
+.slide2-item span{
+    font-size: 10px;
+    font-family: 'Poppins';
+    background-color: rgb(121, 195, 10);
+    padding: 2px 5px;
+    margin-left: 10px;
+    color: white;
+}
+.stars{
+    color: gray;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Poppins';
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.stars i{
+    color: rgb(151, 151, 59);
+}
+.contact{
+    margin-top: 50px;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jombang | Argiculture</title>
+    <link rel="stylesheet" href="../src/css/import-font.css">
+    <link rel="stylesheet" href="../src/css/desktop-style.css">
+    <link rel="stylesheet" href="../src/css/animation.css">
+    <link rel="stylesheet" href="../src/css/toko2-style.css">
+    <link rel="stylesheet" href="../src/css/mobile-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+        <div class="nav-nduwur">
+            <div class="nav-logo">
+                <img src="../src/image/leaf.png" alt="ikon PNG Dirancang Oleh sidik arasid dari https://id.pngtree.com/freepng/leaf-logo-icon-design-template-vector_4077452.html?sol=downref&id=bef">
+                <p>Grow Store</p>
+            </div>
+            <div class="nav-menu">
+                <a href="../">Beranda</a>
+                <a href="../#about">Sejarah</a>
+                <a href="../#" id="toko">Toko <div class="toko-menu">
+                    <p>Hasil Pertanian</p>
+                    <p>Lainya</p>
+                </div></a>
+                <a href="../#Contact">Kontak</a>
+            </div>
+            <div class="btn-right">
+                <a href="#!" onclick="masuk()">Masuk</a>
+                <a href="#!" onclick="daftar()">Daftar</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Cari Produk Pertanian Apa?">
+            </div>
+        </div>
+    </nav>
+    <div class="nav-gap"></div>
+
+    <div class="container">
+        <div class="tokolabel">
+            <h1> Buah-Buahan</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="slide2-toko">
+            <div class="slide2-toko-col">
+                <div class="slide2-item">
+                    <div class="image" style="background-image: url('../src/images/semangka.jpg');"></div>
+                    <div class="container">
+                        <p class="nama-item">Semangka</p>
+                    </div>
+                    <h1>Rp 14.000</h1>
+                    <span>kualitas Terbaik</span>
+                    <p class="stars"><i class="fa-solid fa-star"></i> 4,5 | 4500 terjual</p>
+                </div>
+
+                <div class="slide2-item">
+                    <div class="image" style="background-image: url('../src/items-image/anggur.jpg');"></div>
+                    <div class="container">
+                        <p class="nama-item">Anggur</p>
+                    </div>
+                    <h1>Rp 14.000</h1>
+                    <span>kualitas Terbaik</span>
+                    <p class="stars"><i class="fa-solid fa-star"></i> 4,5 | 4500 terjual</p>
+                </div>
+
+                <div class="slide2-item">
+                    <div class="image" style="background-image: url('../src/items-image/strobery.jpg');"></div>
+                    <div class="container">
+                        <p class="nama-item">Strobery</p>
+                    </div>
+                    <h1>Rp 14.000</h1>
+                    <span>kualitas Terbaik</span>
+                    <p class="stars"><i class="fa-solid fa-star"></i> 4,5 | 4500 terjual</p>
+                </div>
+
+                <div class="slide2-item">
+                    <div class="image" style="background-image: url('../src/items-image/melon.jpg');"></div>
+                    <div class="container">
+                        <p class="nama-item">Melon</p>
+                    </div>
+                    <h1>Rp 14.000</h1>
+                    <span>kualitas Terbaik</span>
+                    <p class="stars"><i class="fa-solid fa-star"></i> 4,5 | 4500 terjual</p>
+                </div>
+
+                <div class="slide2-item">
+                    <div class="image" style="background-image: url('../src/items-image/jeruk.jpeg');"></div>
+                    <div class="container">
+                        <p class="nama-item">Jeruk</p>
+                    </div>
+                    <h1>Rp 14.000</h1>
+                    <span>kualitas Terbaik</span>
+                    <p class="stars"><i class="fa-solid fa-star"></i> 4,5 | 4500 terjual</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+   
+    
+    <div class="contact" id="Contact">
+        <h1>Contact US</h1>
+        <p>selalu terhubung dengan kami</p>
+        <div class="container">
+            <div class="social-col">
+                <a href="#">
+                    <img src="../src/images/fb.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="../src/images/ig.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="../src/images/twet.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="../src/images/yt.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Login -->
+    <div class="col-login" id="col-login">
+        <div class="col-login-field">
+            <div class="col-login-close" onclick="closeLogin()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <h1>Masuk</h1>
+            <div class="container">
+                <form action="/">
+                    <input type="text" id="usr" placeholder="Email atau Nomor Telephon" required>
+                    <label for="usr"><i class="fa-solid fa-envelope"></i></label>
+                    <input type="password" id="pwd" placeholder="Kata Sandi" required>
+                    <label for="pwd"><i class="fa-solid fa-lock"></i></label>
+                    <a href="#">Lupa Sandi?</a>
+                    <a href="#" class="no-acc" onclick="goDaftar()">Daftar Sekarang</a>
+                    <button>Masuk</button>
+                </form>
+            </div>
+            <div class="container-login-dengan">
+                <div class="line"></div>
+            </div>
+            <div class="container">
+                <span>Masuk Dengan</span>
+            </div>
+            <div class="container">
+                <div class="col-oaut">
+                    <div class="oaut">
+                        <img src="./src/image/Google_Icons-09-512.webp" alt="google logo">
+                        <p>Google</p>
+                    </div>
+                    <div class="oaut">
+                        <img id="fb"src="./src/image/fb_icon_325x325.png" alt="google logo">
+                        <p>Facebook</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign -->
+
+    <div class="col-login" id="col-sign">
+        <div class="col-login-field">
+            <div class="col-login-close" onclick="closeSign()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <h1>Daftar</h1>
+            <div class="container">
+                <form action="/">
+                    <input type="text" id="usr" placeholder="Nama Pengguna" required>
+                    <label for="usr"><i class="fa-solid fa-user"></i></label>
+                    <input type="text" id="usr" placeholder="Email atau Nomor Telephon" required>
+                    <label for="usr"><i class="fa-solid fa-envelope"></i></label>
+                    <input type="password" id="pwd" placeholder="Kata Sandi" required>
+                    <label for="pwd"><i class="fa-solid fa-lock"></i></label>
+                    <input type="password" id="pwd" placeholder="Konfirmasi Kata Sandi" required>
+                    <label for="pwd"><i class="fa-solid fa-lock"></i></label>
+                    <a href="#">Lupa Sandi?</a>
+                    <a href="#" class="no-acc" onclick="goLogin()">Login Sekarang</a>
+                    <button>Daftar</button>
+                </form>
+            </div>
+            <div class="container-login-dengan">
+                <div class="line"></div>
+            </div>
+            <div class="container">
+                <span>Masuk Dengan</span>
+            </div>
+            <div class="container">
+                <div class="col-oaut">
+                    <div class="oaut">
+                        <img src="./src/image/Google_Icons-09-512.webp" alt="google logo">
+                        <p>Google</p>
+                    </div>
+                    <div class="oaut">
+                        <img id="fb"src="./src/image/fb_icon_325x325.png" alt="google logo">
+                        <p>Facebook</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../src/javascript/main.js"></script>
+</body>
+</html>

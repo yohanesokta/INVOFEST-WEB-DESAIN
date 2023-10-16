@@ -6,7 +6,7 @@
         display: none;
     }
     .btn-right{
-        right: 10px;
+        right: 100px;
     }
     /* end nav */
     .hero-txt-left{
@@ -60,23 +60,27 @@
        background: none;
     }
 
-    
-.left{
-    opacity: 0;
-    transform: translateX(0px);
-}
-    /* end story */
-
-}
-
-@media only screen and (max-width: 820px){
-    .contact-menu{
-        display: block;
+        
+    .left{
+        opacity: 0;
+        transform: translateX(0px);
     }
-    .contact-isi{
+    .slide2-toko{
         width: 90%;
-        margin-left: 5%;
-        margin-top: 20px;
+        overflow-y: hidden;
+        overflow-x: scroll;
     }
-    
+    .slide2-toko {
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .slide2-toko::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+    /* end story */
+    .search{
+        margin: auto 50px auto 20px;
+    }
+
 }
+

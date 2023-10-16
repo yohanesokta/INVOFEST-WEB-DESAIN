@@ -46,14 +46,9 @@ const observer = new IntersectionObserver((entries) => {
 const leftScroll  = document.querySelectorAll('.left-scroll')
 leftScroll.forEach((el)=> observer.observe(el))
 
-const observerContact = new IntersectionObserver((entries)=>{
-    entries.forEach((entry)=>{
-        if(entry.isIntersecting){
-            entry.target.classList.remove('contact-nAnim')
-        }else{
-            entry.target.classList.add('contact-nAnim')
-        }
-    })
-})
-
-document.querySelectorAll('.contact-menu').forEach((el)=> observerContact.observe(el))
+function goPertanian(){
+    window.location.href = "./Pertanian";
+}
+function goOther(){
+    window.location.href = './other'
+}

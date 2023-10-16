@@ -13,21 +13,30 @@
 <body>
     <!-- navigation -->
     <nav>
-        <div class="nav-logo">
-            <img src="./src/image/leaf.png" alt="ikon PNG Dirancang Oleh sidik arasid dari https://id.pngtree.com/freepng/leaf-logo-icon-design-template-vector_4077452.html?sol=downref&id=bef">
-            <p>Grow Store</p>
+        <div class="nav-nduwur">
+            <div class="nav-logo">
+                <img src="./src/image/leaf.png" alt="ikon PNG Dirancang Oleh sidik arasid dari https://id.pngtree.com/freepng/leaf-logo-icon-design-template-vector_4077452.html?sol=downref&id=bef">
+                <p>Grow Store</p>
+            </div>
+            <div class="nav-menu">
+                <a href="#home">Beranda</a>
+                <a href="#about">Sejarah</a>
+                <a href="#" id="toko">Toko <div class="toko-menu">
+                    <p onclick="goPertanian()">Hasil Pertanian</p>
+                    <p onclick="goOther()">Lainya</p>
+                </div></a>
+                <a href="#Contact">Kontak</a>
+            </div>
+            <div class="btn-right">
+                <a href="#!" onclick="masuk()">Masuk</a>
+                <a href="#!" onclick="daftar()">Daftar</a>
+            </div>
         </div>
-        <div class="nav-menu">
-            <a href="#home">Beranda</a>
-            <a href="#about">Sejarah</a>
-            <a href="#" id="toko">Toko <div class="toko-menu">
-                <p>Buah</p>
-                <p>Sayuran</p>
-            </div></a>
-            <a href="#Contact">Kontak</a>
-        </div>
-        <div class="btn-right">
-            <a href="#!" onclick="daftar()">Daftar Sekarang</a>
+        <div class="container">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Cari Produk Pertanian Apa?">
+            </div>
         </div>
     </nav>
     <div class="nav-gap"></div>
@@ -37,7 +46,7 @@
         <div class="hero-txt-left">
             <h1>Grow Store</h1>
             <p>
-                Selamat datang di Grow Store. Temukan dan dapatkan hasil tani yang berkualitas dengan mudah dan aman. Di Grow Store online kami anda akan menemukan pilihan hasil tani dengan harga yang terjangkau.
+                Selamat datang di Grow Store. Temukan dan dapatkan hasil tani yang berkualitas dengan mudah dan aman. Di Grow Store online anda akan menemukan pilihan hasil tani dengan harga yang terjangkau.
             </p>
             <div class="emailbox">
                 <button onclick="masuk()">Masuk Sekarang</button>
@@ -48,7 +57,7 @@
                 <div class="berita">
                     <div class="image-berita" id="berita1">
                     </div>
-                    <p>Harga Bawang Naik, Disdagrin Jombang Masih Wajar </p>
+                    <p><span>[Berita Terkini] </span>Harga Bawang Naik, Disdagrin Jombang Masih Wajar </p>
                     <p>
                         enaikan harga bawang merah di pasar tradisional seminggu terakhir, dianggap wajar
                     </p>
@@ -62,9 +71,9 @@
                 <div class="berita">
                     <div class="image-berita" id="berita2">
                     </div>
-                    <p>Simak Yuk Harga Cabe Rawit Merah di Kota Blitar</p>
+                    <p><span>[Berita Terkini] </span>Combi, Sang Predator Tercepat Diberbagai Lahan</p>
                     <p>
-                        terupdate pada pukul 09:50:38 menyebutkan, harga Cabe Rawit Merah di Kota Blitar Rp24.000
+                        Memanen padi dengan alat modern memang lebih cepat dibanding dengan alat panen tradisional
                     </p>
                     <div class="btn">
                         <a href="https://blitar.jatimnetwork.com/ekonomi-bisnis/7339521008/terendah-di-jombang-simak-yuk-harga-cabe-rawit-merah-di-kota-blitar-rabu-19-juli-2023#sidr" class="btn-readmore" target="_blank">
@@ -134,64 +143,27 @@
                 <img src="./src/images/images3.png" alt="">
             </div>
             <div class="col-story left-scroll left">
-                <p><span>Grow store</span> ini tercipta dikarenakan adanya konflik antara petani dan pembeli yang disebabkan harga yang tidak ekonomis dimana petani mendapatkan uang yang kecil dari pengepul dan pembeli mendapatkan harga yang mahal, Website ini diciptakan untuk membuat petani sejahtera dan pembeli merasa puas Dengan harga yang terjangkau</p>
+                <p><span>Grow store</span> adalah platform yang memungkinkan petani mengunggah produk pertanian mereka secara langsung dan mendapatkan konsumen tanpa melalui perantara. Dengan menggunakan website ini maka para petani dapat mengoptimalkan hasil penjualan produksinya dan konsumen mendapatkan barang produksi dengan harga yang terjangkau. Selain itu dengan adannya website ini kegiatan transaksi akan lebih efektif dan effisien karena jangkauanya yang lebih luas dan bisa diakses dimana saja</p>
             </div>
         </div>
     </div>
     <div class="contact" id="Contact">
         <h1>Contact US</h1>
+        <p>selalu terhubung dengan kami</p>
         <div class="container">
-            <div class="contact-menu contact-nAnim">
-                <div class="contact-isi">
-                    <div class="container">
-                        <div class="icon"><i class="fa-brands fa-sellcast"></i></div>
-                        <div class="contact-isi-form">
-                            <h3>
-                                Selling Now
-                            </h3>
-                            <div class="container">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, necessitatibus!</p>
-                            </div>
-                            <div class="container">
-                                <a href="#" id="contact-visit">Go Selling Now <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-isi">
-                    <div class="container">
-                        <div class="icon"><i class="fa-solid fa-headset"></i></div>
-                        <div class="contact-isi-form">
-                            <h3>
-                                Help & Support
-                            </h3>
-                            <div class="container">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, necessitatibus!</p>
-                            </div>
-                            <div class="container">
-                                <a href="#" id="contact-visit">Contact Support <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-isi">
-                    <div class="container">
-                        <div class="icon"><i class="fa-regular fa-newspaper"></i></div>
-                        <div class="contact-isi-form">
-                            <h3>
-                                Media
-                            </h3>
-                            <div class="container">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, necessitatibus!</p>
-                            </div>
-                            <div class="container">
-                                <a href="#" id="contact-visit">Visit Media <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="social-col">
+                <a href="#">
+                    <img src="./src/images/fb.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="./src/images/ig.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="./src/images/twet.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="./src/images/yt.png" alt="">
+                </a>
             </div>
         </div>
     </div>
