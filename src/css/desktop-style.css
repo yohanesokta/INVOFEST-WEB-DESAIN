@@ -155,7 +155,7 @@ nav{
     margin-top: 65px;
     padding: 10px;
     background: rgb(25,168,85);
-background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%, rgba(246,246,246,1) 100%);
+/* background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%, rgba(246,246,246,1) 100%); */
     width: 300px;
 }
 .hero-txt-left p{
@@ -616,4 +616,61 @@ footer .container p , .right-footer p{
     position: absolute;
     height: 50px;
     right:10px;
+}
+
+.stars-sec{
+    font-family: 'Poppins';
+
+    display: flex;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.stars-sec-col{
+    margin: auto;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+.stars-sec-field{
+    width: 250px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 250px;
+}
+.stars-sec-field .user{
+    display: flex;
+}
+.stars-sec-field .img-f{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin: 20px;
+    border-radius: 50%;
+}
+.stars-sec-field .user-desc{
+    display: block;
+}
+.stars-sec-field .user-desc h1{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.stars-sec-field .user-desc p{
+    font-size: 12px;
+    margin: 0;
+}
+.starts-icon{
+    margin-left: 20px;
+    font-size: 12px;
+    color: rgb(155, 155, 9);
+}
+.message{
+     margin: 10px 20px;
+}
+.message p{
+    font-size: 14px;
+}
+.stars-sec-label{
+    text-align: center;
+    margin: 40px 0px;
+    font-family: 'Poppins';
 }

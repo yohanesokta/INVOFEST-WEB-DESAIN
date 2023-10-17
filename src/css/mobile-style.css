@@ -37,7 +37,7 @@
     /* story */
     .col-story-one{
         margin-top: 1250px;
-        height: 800px;
+        height: 700px;
     }
     .col-story-center{
         display: block;
@@ -79,8 +79,42 @@
     }
     /* end story */
     .search{
-        margin: auto 50px auto 20px;
+        margin: auto 20px auto 20px;
+        width: 85%;
     }
 
+   /* footer */
+   footer .container,.right-footer{
+    display: none;
+   }
+   .tim-col{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+   }
+   .tim-col a{
+    margin: 0;
+   }
+  
 }
 
+@media only screen and (max-width: 640px){
+    .col-story-one{
+        height: 800px;
+    }
+    
+}
+@media only screen and (max-width: 480px){
+    .col-story-one{
+        height: 1000px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .stars-sec-col{
+        width: auto;
+        display: block;
+       }
+       .stars-sec-field{
+        margin: 20px 0;
+       }
+}
