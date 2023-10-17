@@ -579,3 +579,41 @@ background: linear-gradient(90deg, rgba(25,168,85,1) 0%, rgba(118,201,153,1) 23%
     margin-left: 8px;
     margin-right: 5px;
 }
+.container2{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    height: 50px;
+}
+footer{
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+    height: 50px;
+}
+.tim-col{
+    width: 500px;
+    margin: auto;
+}
+.container2 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 12px;
+    margin: 0 10px;
+}
+footer .container{
+    width: auto;
+    height: 50px;
+}
+footer .container p , .right-footer p{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 12px;
+    margin: auto 20px;
+}
+.right-footer{
+    display: flex;
+    position: absolute;
+    height: 50px;
+    right:10px;
+}
